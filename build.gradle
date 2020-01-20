@@ -3,6 +3,9 @@ defaultTasks 'jar', 'testJar'
 apply plugin: 'java'
 apply plugin: 'maven'
 apply plugin: 'checkstyle'
+plugins {
+  id "org.sonarqube" version "2.7"
+}
 
 group = 'com.mycompany'
 version = '0.0.1-SNAPSHOT'
